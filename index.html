@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SchoolHop Foundation</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background-image:
+linear-gradient(
+rgba(0,77,64,0.85),
+rgba(0,77,64,0.85)
+),
+url("https://images.unsplash.com/photo-1509062522246-3755977927d7");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+}
+
+header{
+
+background:#004d40;
+color:white;
+padding:20px;
+text-align:center;
+
+}
+
+nav{
+
+margin-top:15px;
+
+}
+
+nav button{
+
+background:white;
+color:#004d40;
+border:none;
+padding:12px 18px;
+margin:5px;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+
+}
+
+nav button:hover{
+
+background:#b2dfdb;
+
+}
+
+.container{
+
+max-width:1200px;
+margin:20px auto;
+padding:20px;
+
+}
+
+.page{
+
+display:none;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+
+}
+
+.active{
+
+display:block;
+
+}
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero img{
+
+width:100%;
+max-width:700px;
+border-radius:10px;
+margin-top:20px;
+
+}
+
+.dashboard-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+
+}
+
+.card{
+
+background:#e0f2f1;
+padding:25px;
+border-radius:10px;
+text-align:center;
+
+}
+
+.card h3{
+
+color:#004d40;
+
+}
+
+.gallery{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+
+}
+
+.gallery img{
+
+width:100%;
+border-radius:10px;
+
+}
+
+.stat-box{
+
+background:#e0f2f1;
+padding:20px;
+margin:10px;
+border-radius:10px;
+text-align:center;
+
+}
+
+button.action{
+
+background:#004d40;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+
+}
+
+button.action:hover{
+
+background:#00332c;
+
+}
+
+.resources a{
+
+display:block;
+margin:15px 0;
+font-size:18px;
+color:#004d40;
+font-weight:bold;
+
+}
+
+footer{
+
+background:#00251a;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:30px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>SchoolHop Foundation</h1>
+
+<p>
+Safe & Free School Transport For Rural Learners
+</p>
+
+<nav>
+
+<button onclick="showPage('home')">Home</button>
+
+<button onclick="showPage('mission')">Our Mission</button>
+
+<button onclick="showPage('fleet')">Bus Fleet</button>
+
+<button onclick="showPage('impact')">Impact</button>
+
+<button onclick="showPage('resources')">Resources</button>
+
+<button onclick="showPage('sponsor')">Sponsor</button>
+
+</nav>
+
+</header>
+
+<div class="container">
+
+<!-- HOME -->
+
+<section id="home" class="page active">
+
+<div class="hero">
+
+<h2>Welcome To SchoolHop Foundation</h2>
+
+<p>
+
+Helping school children from rural communities
+reach educational facilities safely and on time.
+
+</p>
+
+<br>
+
+<button class="action"
+onclick="showPage('mission')">
+
+Learn More
+
+</button>
+
+<div class="dashboard-grid">
+
+<div class="card">
+
+<h3>🎯 Our Mission</h3>
+
+<p>
+Why SchoolHop exists.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🚌 Bus Fleet</h3>
+
+<p>
+Vehicles used for transport.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📊 Impact</h3>
+
+<p>
+View our statistics.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🤝 Sponsors</h3>
+
+<p>
+Help learners access education.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MISSION -->
+
+<section id="mission" class="page">
+
+<h2>Our Mission</h2>
+
+<br>
+
+<p>
+
+SchoolHop Foundation is a public transport initiative
+created to assist learners living in rural areas who
+travel long distances to school every day.
+
+</p>
+
+<br>
+
+<p>
+
+Many primary and high school learners walk
+several kilometres daily to reach their schools.
+
+The SchoolHop Foundation aims to provide
+safe, reliable and free transportation funded
+through public and government partnerships.
+
+</p>
+
+<br>
+
+<ul>
+
+<li>Improve school attendance</li>
+
+<li>Improve learner safety</li>
+
+<li>Reduce travel fatigue</li>
+
+<li>Increase access to education</li>
+
+<li>Support community development</li>
+
+</ul>
+
+</section>
+
+<!-- FLEET -->
+
+<section id="fleet" class="page">
+
+<h2>SchoolHop Bus Fleet</h2>
+
+<br>
+
+<p>
+
+Examples of buses used to transport learners.
+
+</p>
+
+<br>
+
+<div class="gallery">
+
+<div>
+
+<img src="https://trucksmag.co.za/wp-content/uploads/2019/02/heatherbank-bus-handover_1800x1800-1024x683.jpg">
+
+<br><br>
+
+<a href="https://trucksmag.co.za/wp-content/uploads/2019/02/heatherbank-bus-handover_1800x1800-1024x683.jpg"
+target="_blank">
+
+View Full Bus Image
+
+</a>
+
+</div>
+
+<div>
+
+<img src="https://th.bing.com/th/id/OIP.ST2DuqWy_hwjIUqOiu0tFQHaFj?w=600&h=500&c=7&r=0&o=5&pid=1.7">
+
+<br><br>
+
+<a href="https://th.bing.com/th/id/OIP.ST2DuqWy_hwjIUqOiu0tFQHaFj?w=600&h=500&c=7&r=0&o=5&pid=1.7"
+target="_blank">
+
+View Full Bus Image
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- IMPACT -->
+
+<section id="impact" class="page">
+
+<h2>Impact Statistics</h2>
+
+<br>
+
+<div class="stat-box">
+
+<h1>1,250+</h1>
+
+<p>
+Children transported daily
+</p>
+
+</div>
+
+<div class="stat-box">
+
+<h1>15</h1>
+
+<p>
+Village routes
+</p>
+
+</div>
+
+<div class="stat-box">
+
+<h1>98%</h1>
+
+<p>
+Attendance rate
+</p>
+
+</div>
+
+</section>
+
+<!-- RESOURCES -->
+
+<section id="resources" class="page">
+
+<h2>Educational Resources</h2>
+
+<div class="resources">
+
+<a href="https://www.unicef.org/education"
+target="_blank">
+
+UNICEF Education Information
+
+</a>
+
+<a href="https://www.unesco.org/en/education"
+target="_blank">
+
+UNESCO Education Programs
+
+</a>
+
+<a href="https://www.education.gov.za/"
+target="_blank">
+
+South African Department of Education
+
+</a>
+
+</div>
+
+</section>
+
+<!-- SPONSOR -->
+
+<section id="sponsor" class="page">
+
+<h2>Become A Sponsor</h2>
+
+<br>
+
+<form onsubmit="submitSponsor(event)">
+
+<input
+type="text"
+id="name"
+placeholder="Organisation Name"
+required
+style="width:100%;padding:10px;margin-bottom:15px;">
+
+<input
+type="email"
+id="email"
+placeholder="Email Address"
+required
+style="width:100%;padding:10px;margin-bottom:15px;">
+
+<button class="action">
+
+Submit Sponsorship Interest
+
+</button>
+
+</form>
+
+<br>
+
+<div id="successMessage"></div>
+
+</section>
+
+</div>
+
+<footer>
+
+<h3>SchoolHop Foundation</h3>
+
+<p>
+Providing safe and reliable transport for
+rural learners in South Africa.
+</p>
+
+</footer>
+
+<script>
+
+window.onload = function(){
+
+alert(
+"Welcome to SchoolHop Foundation Dashboard"
+);
+
+};
+
+function showPage(pageId){
+
+let pages =
+document.querySelectorAll(".page");
+
+pages.forEach(function(page){
+
+page.classList.remove("active");
+
+});
+
+document.getElementById(pageId)
+.classList.add("active");
+
+}
+
+function submitSponsor(event){
+
+event.preventDefault();
+
+let name =
+document.getElementById("name").value;
+
+let email =
+document.getElementById("email").value;
+
+document.getElementById(
+"successMessage"
+).innerHTML =
+
+"<h3 style='color:green;'>"+
+"Thank you " + name +
+"! We will contact you at " +
+email +
+"</h3>";
+
+}
+
+</script>
+
+</body>
+</html>
